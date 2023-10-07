@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.carousel {
+    height: 500px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .carousel-item {
+    height: 500px;
+    background-color: #777;
+    margin-top: 0px;
+}
+
+.carousel-inner>.carousel-item>img {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    right: 10px;
+    padding: 10px 8px;
+    background-color: red;
+    border-radius: 10%;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+.scrollTop a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#fff;
+    font-size: 20px;
+
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    top:calc(75% - 25%)
+
+
+}
+.carousel-inner {
+    width: 100vw!important;
+    height: 100vh!important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.btn {
+    margin-top: 20px;
+}
+.company{
+    font-size: xx-small;
+}

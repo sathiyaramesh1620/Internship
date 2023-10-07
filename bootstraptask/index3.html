@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Data list</h2>
+        <form action="">
+            <label for="">
+                Choose your browser from the list:
+            </label>
+            <input type="text" class="form-control" list="browsers" name="browser" id="browser">
+            <datalist>
+                <option value="Edge"></option>
+
+            </datalist>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+        *****Check boxes****
+        <form action="">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1">
+                <label class="form-check-label" for="check1">option1</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input"id="check2">
+                <label for="check2" class="form-check-label">option2</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input"id="check3" disabled>
+                <label for="check3" class="form-check-label">option3</label>
+
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+        <hr>
+        *****<h3>Radio buttons</h3>**********
+        <form action="">
+            <div class="form-check">
+                <input type="radio" checked class="form-check-input" id="check1">
+                <label for="check1">Option1</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="check2">
+                <label for="check2">Option1</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" disabled class="form-check-input" id="check1">
+                <label for="check1">Option1</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+
+
+        *******<h2>Toggle Switch</h2>
+        <form action="">
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="switch" name="darkmode" value="yes" checked>
+                <label for="switch" class="form-check-label">dark mode</label>
+            </div>
+            <button class="btn btn-primary mt-3">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
